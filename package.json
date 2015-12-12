@@ -1,0 +1,28 @@
+{
+  "name": "unsharing-economy",
+  "version": "1.0.0",
+  "description": "CHD unsharing economy",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "async": "^1.4.2",
+    "body-parser": "^1.13.3",
+    "cors": "^2.7.1",
+    "express": "^4.13.3",
+    "imgur": "amoskyler/node-imgur",
+    "jade": "^1.11.0",
+    "lodash.clone": "^3.0.3",
+    "mongoose": "^4.1.3",
+    "object-assign": "^4.0.1",
+    "superagent": "^1.3.0"
+  },
+  "devDependencies": {
+    "mocha": "^2.2.5",
+    "should": "^7.0.4"
+  }
+}
