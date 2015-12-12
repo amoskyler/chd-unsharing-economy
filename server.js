@@ -8,7 +8,7 @@ var path = require('path');
 var config = require('./config');
 
 // Connect to db
-mongoose.connect('mongodb://localhost/gifcoolery');
+mongoose.connect('mongodb://localhost/unsharing-economy');
 
 var api = require('./api');
 
