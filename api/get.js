@@ -5,6 +5,12 @@ var config = require('../config');
 
 module.exports = function (app) {
   app.get('/', function(req, res){
-    res.send('Hello World!');
+
+    var fn = Jade.compileFile('../templates/index');
+
+    var html = fn();
+
+    return res.send(html);
+
   });
 };
