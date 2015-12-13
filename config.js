@@ -20,7 +20,7 @@ module.exports = (function (){
 
   if(env === 'production') {
     return {
-      site_url: '127.0.0.1',
+      site_url: 'localhost',
       port: port
     };
   } else {
