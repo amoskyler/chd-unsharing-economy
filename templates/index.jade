@@ -2,4 +2,11 @@ doctype html
 html
   body
     div.categories
-      | Hello world!
+      each category in categories
+        ul
+          li
+            | name: #{category.name}
+          li
+            | description: #{category.description}
+          li
+            | link: #{category.link}
