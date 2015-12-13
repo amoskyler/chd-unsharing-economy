@@ -15,4 +15,14 @@ module.exports = function (app) {
     return res.send(html);
 
   });
+
+  app.get('/:id', function(req, res){
+
+    var fn = Jade.compileFile('./templates/items.jade');
+    var html = fn({items: categories[req.params.id].items});
+
+    return res.send(html);
+
+  });
+
 };

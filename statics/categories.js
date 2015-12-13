@@ -1,4 +1,4 @@
-module.exports = [
+module.exports = {
   travel: {
     name:        'Travel',
     description: 'We take the best trips.',
@@ -127,4 +127,4 @@ module.exports = [
       }
     ]
   }
-];
+};

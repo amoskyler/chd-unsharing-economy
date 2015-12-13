@@ -1,12 +1,10 @@
 doctype html
 html
+  head
+    title Don't Care Won't Share
+    style
+      src('/css/styles.css')
+      src('/bootstrap.min.css')
   body
     div.categories
-      each category in categories
-        ul
-          li
-            | name: #{category.name}
-          li
-            | description: #{category.description}
-          li
-            | link: #{category.link}
+      include categories

@@ -1,0 +1,6 @@
+style
+  src('/css/categories.css')
+div.categories
+  each category in categories
+    p
+      a(href=category.slug) #{category.name}
