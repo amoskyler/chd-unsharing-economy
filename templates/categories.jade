@@ -1,6 +1,10 @@
-style
-  src('/css/categories.css')
+link(href='/css/categories.css', rel='stylesheet')
+
 div.categories
-  each category in categories
-    p
-      a(href=category.slug) #{category.name}
+  ul.items
+    each category in categories
+      li
+        div.title
+         a(href=category.slug) #{category.name}
+        div.arrow >
+      

@@ -1,6 +1,18 @@
-style
-  src('/css/items.css')
+link(href='/css/items.css', rel='stylesheet')
+
+include head
 div.items
   each item in items
-    p
-     | #{item.owner}
+    p.top
+     img.image(src=item.image)
+    p.bottom 
+      div.description
+        | #{item.description}
+      div.owner
+        | #{item.owner}
+      div.distance
+        | #{item.distance}
+      div.utilization
+        | #{item.utilization}
+      div.cost
+        | #{item.cost}

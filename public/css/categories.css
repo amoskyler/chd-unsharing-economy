@@ -1,0 +1,24 @@
+.categories {
+
+}
+
+.items {
+  list-style-type: none;
+  position: relative;
+  padding: 0;
+}
+
+.items li{
+  border: black 2px solid;
+  padding: 1em;
+}
+
+.items .title {
+  display: inline;
+}
+
+.items .arrow {
+  display: inline;
+  position: absolute;
+  right: 5em;
+}
